@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css : pseudo-classes</title>
+    <style>
+        body{
+            font:19px/25px arial;padding: 10px 0 0 20px; }
+            h1{font-size: 28px;margin-bottom:35px;color: blue;}
+
+            input:focus{
+                border: 3px solid rgb(206, 29, 29);
+            }
+            input[type='checkbox']:checked +label{
+                color:rgb(61, 170, 61);
+            }
+
+            input[type='radio']:checked + label{
+                color:rgb(233, 104, 104);
+            }
+
+        @media screen and(max-width: 1020px){
+            p{
+                width: 800px;
+            }
+            
+
+        }
+        @media screen and (max-width: 810px){
+            p{
+                width: 500px;
+    
+        }
+        
+        }
+        @media screen and (max-width: 510px){
+            p{
+                width: auto;
+
+        }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>pseudo-classes</h1>
+    <form action="">
+        <label for="">first name:</label> <input type="text" required> <br> <br>
+        <label for="">last name:</label> <input type="text" > <br> <br>
+        <label for="">your age:</label> <input type="number" min="18" max="40"> <br> <br>
+        <label for="">your email-id:</label> <input type="email" required> <br> <br>
+        <label for="">your hobbies:</label> 
+        <input type="checkbox" name="hobby"> <label for="">sport</label>
+        <input type="checkbox" name="hobby"> <label for="">music</label>
+        <input type="checkbox" name="hobby"> <label for="">travel</label>
+        <input type="checkbox" name="hobby"> <label for="">books reading</label>
+        <br> <br>
+        <label for="">your gender:</label>
+        <input type="radio" name="gender"> <label for="">male</label>
+        <input type="radio" name="gender"> <label for="">female</label>
+        <br> <br>
+        <label for="">your country:</label>
+        <select name="country" id="">
+            <option value="none">select</option>
+            <option value="India">india</option>
+            <option value="pakistan">pakistan</option>
+            <option value="srilanka">srilanka</option>
+            <option value="bangladesh">bangladesh</option>
+        </select>
+        <br> <br>
+        <input type="submit">
+        
+
+
+    </form>
+    
+</body>
+</html>
